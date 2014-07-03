@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.app.backup.BackupManager;
 
 public class ItemAddActivity extends Activity {
 
@@ -61,7 +62,10 @@ public class ItemAddActivity extends Activity {
                 
                 // confirmation
                 Toast.makeText(getBaseContext(), "Added: " + newItemCoinAddress, Toast.LENGTH_SHORT).show();
-                    
+
+                // backup
+                requestBackup();
+
                 //Switch back to ItemListActivity and return 'yes' parameter
                 Intent myIntent = new Intent(ItemAddActivity.this, ItemListActivity.class);
                 myIntent.putExtra("key", "yes"); //Optional parameters
@@ -109,6 +113,9 @@ public class ItemAddActivity extends Activity {
         //...
     }
 
-
+    public void requestBackup() {
+        BackupManager bm = new BackupManager(this);
+        bm.dataChanged();
+    }
 
 }

@@ -17,7 +17,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:backupAgent="TheBackupAgent">
          <activity
             android:name="com.jhdev.coinfriends.ItemListActivity"
             android:launchMode="singleTask"
@@ -62,6 +63,10 @@
             android:name="com.jhdev.coinfriends.ItemContentProvider"
             android:authorities="com.jhdev.coinfriends.items"
             android:exported="false" />
+
+        <meta-data android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIXINSGqNjgpxLBqH5ZY5Q9MLITwtr5LDsMB69rQ" />
+
     </application>
 
 </manifest>

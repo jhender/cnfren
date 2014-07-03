@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.google.analytics.tracking.android.EasyTracker;
 
-
 /**
  * An activity representing a list of Items. This activity
  * has different presentations for handset and tablet-size devices. On
@@ -64,6 +63,7 @@ public class ItemListActivity extends FragmentActivity
         }
 
         // TODO: If exposing deep links into your app, handle intents here.
+
     }
 
     /**
