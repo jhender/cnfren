@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CoinFriends</string>
+    <string name="title_item_detail">Coin Address</string>
+    <string name="item_add_yes">Add</string>
+    <string name="item_add_title">Add New Address</string>
+    <string name="share">Share</string>
+    <string name="pref_sync_setting">Sync</string>
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_user_name">User name</string>
+    <string name="pref_user_name_summary">User name</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_add">Add</string>
+    <string name="default_btc">14ttsooq42L35imoNWThdJ57x5FcytwwQh</string>
+    <string name="default_ltc">LTmwQvJ9Bh4sAgz3mFrQXMrxHUYmd17kAc</string>
+    <string name="default_doge">DGCZD4aPV7QSBw84qFFACnsWFGt8YUjLHT</string>
+        
+    
+    <string-array name="coin_types">
+        <item>BTC</item>
+        <item>LTC</item>
+        <item>PPC</item>
+        <item>XRP</item>
+		<item>NMC</item>
+		<item>QRK</item>
+		<item>DOGE</item>
+		<item>XPM</item>
+		<item>FTC</item>
+		<item>NVC</item>
+		<item>FRK</item>
+		<item>YAC</item>
+		<item>TAG</item>
+		<item>TRC</item>
+    </string-array>
+    
+</resources>

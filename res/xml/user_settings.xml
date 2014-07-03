@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <!-- TODO UNDER DEVELOPMENT  
+  
+   <PreferenceCategory android:title="Sync" >
+                    
+        <Preference
+                android:title="Upgrade to Pro (under development)"
+                android:summary="Support development and unlock extra features"
+                android:key="prefUserPassword"/>
+     
+        <CheckBoxPreference
+                android:title="Enable Cloud Sync (under development)"
+                android:summary="Backup to cloud and sync to your other devices"
+                android:key="prefSync"/>
+    </PreferenceCategory>
+       
+     -->
+    <PreferenceCategory android:title="About" >
+  
+        <!-- Secondary screen for donations -->    
+        <PreferenceScreen
+                android:title="Donate to dev"
+                android:summary="Send some coins to support development!"
+                android:persistent="false">
+   
+                <Preference
+                    android:title="Send BTC to:"
+                    android:summary="@string/default_btc"
+                    android:key="send_btc"/>
+                <Preference
+                    android:title="Send LTC to:"
+                    android:summary="@string/default_ltc"
+                    android:key="send_ltc"/>
+                <Preference
+                    android:title="Send DOGE to:"
+                    android:summary="@string/default_doge"
+                    android:key="send_doge"/>
+                
+        </PreferenceScreen>
+        
+        
+                 
+        <Preference
+                android:title="Share with friends!"
+                android:summary="Let your friends know about this great app"
+                android:key="share_with_friends">
+                <!-- Intent details saved under SettingsFragment.java -->            
+        </Preference>  
+        
+        <Preference
+                android:title="Rate this app on Google Play"
+                android:summary=""
+                >
+                  <intent android:action="android.intent.action.VIEW"
+            	android:data="https://play.google.com/store/apps/details?id=com.jhdev.coinfriends" />
+        </Preference> 
+        <Preference
+                android:title="Coin Friends v0.1.3"
+                android:summary="by JH"
+                android:key="prefIntro">
+        </Preference>  
+        
+    </PreferenceCategory>
+
+    
+    
+</PreferenceScreen>

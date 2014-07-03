@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/textView_fieldname"
+        android:layout_weight="0.09"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal" 
+        android:textSize="30sp" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="cointype"
+        android:id="@+id/textView_fieldcointype"
+        android:layout_weight="0.09"
+        android:background="#FFFFFF"
+		android:fontFamily="sans-serif-light"
+		android:textStyle="normal"
+		android:padding="10dp"
+        android:textSize="25sp" />
+    
+    <TextView
+        android:id="@+id/textView_fieldcoinaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.09"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"    
+        android:padding="10dp"
+        android:text="coinaddress"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
+    
+    <Button
+        android:id="@+id/showqrButton"
+                android:layout_marginTop="20dp"
+        
+        android:paddingTop="10dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="View QR Code" />
+
+</LinearLayout>
